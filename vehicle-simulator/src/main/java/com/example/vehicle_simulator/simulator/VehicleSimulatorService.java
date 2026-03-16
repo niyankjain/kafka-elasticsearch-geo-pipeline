@@ -21,7 +21,7 @@ public class VehicleSimulatorService {
   @PostConstruct
   public void startSimulation() {
 
-    for(int i=0;i<1000;i++){
+    for(int i=0;i<10000;i++){
       Map<String,Object> v=new HashMap<>();
       v.put("vehicleId","CAR_"+i);
       v.put("lat",18.5204+ThreadLocalRandom.current().nextDouble(-0.5,0.5));
